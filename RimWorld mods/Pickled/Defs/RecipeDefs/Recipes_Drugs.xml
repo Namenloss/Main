@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+ <RecipeDef>
+    <defName>BrewBrine</defName>
+    <label>Brew Brine</label>
+    <description>Brew Brine from Salt and Sugar.</description>
+    <jobString>Brewing Brine.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+		  <thingDefs>
+			<li>RawSugar</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+	  <li>
+		<filter>
+          <thingDefs>
+			<li>RawSalt</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Brine>1</Brine>
+    </products>
+			<fixedIngredientFilter>
+	      <thingDefs>
+			<li>RawSugar</li>
+			<li>RawSalt</li>
+          </thingDefs>
+			
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+	      <thingDefs>
+			<li>RawSugar</li>
+			<li>RawSalt</li>
+          </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+			</exceptedThingDefs>
+		</defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>DistillVodka</defName>
+    <label>distill vodka</label>
+    <description>Distill a batch of vodka from potatoes.</description>
+    <jobString>Distilling vodka.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1500</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawPotatoes</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Vodka>5</Vodka>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>BrewStrawberryWine</defName>
+    <label>brew strawberry wine</label>
+    <description>Brew a batch of strawberry wine from strawberries.</description>
+    <jobString>Brewing strawberry wine.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1700</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBerries</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <StrawberryWine>4</StrawberryWine>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>DistillBourbon</defName>
+    <label>distill bourbon</label>
+    <description>Distill a batch of bourbon from corn.</description>
+    <jobString>Distilling bourbon.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1800</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCorn</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawCorn</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Bourbon>4</Bourbon>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>DistillTequila</defName>
+    <label>distill tequila</label>
+    <description>Distill a batch of tequila from agave.</description>
+    <jobString>Distilling tequila.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1800</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawAgave</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawAgave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Tequila>6</Tequila>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>BrewSake</defName>
+    <label>brew sake</label>
+    <description>Brew a batch of sake from rice.</description>
+    <jobString>Brewing sake.</jobString>
+    <workSpeedStat>BrewingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>2100</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawRice</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawRice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Sake>7</Sake>
+    </products>
+    <workSkill>Cooking</workSkill>
+	<recipeUsers>
+				<li>Brewery</li>
+		</recipeUsers>
+  </RecipeDef>
+  
+  
+
+</Defs>

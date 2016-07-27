@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="MealBase">
+    <defName>Vodka</defName>
+    <label>vodka</label>
+    <description>A potent spirit derived from potatoes. Its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Vodka</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>13</MarketValue>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <foodType>Fluid, Processed, NutritionalDrug</foodType>
+      <nutrition>0.03</nutrition>
+      <joy>0.18</joy>
+      <joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Alcohol</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>StrawberryWine</defName>
+    <label>strawberry wine</label>
+    <description>A sweet wine made from strawberries. It is rich in flavour, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/StrawberryWine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>16</MarketValue>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <foodType>Fluid, Processed, NutritionalDrug</foodType>
+      <nutrition>0.06</nutrition>
+      <joy>0.22</joy>
+      <joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Alcohol</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="MealBase">
+    <defName>Bourbon</defName>
+    <label>bourbon</label>
+    <description>A strong and warm liquor made from corn. It carries many hearty aromas, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Bourbon</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>21</MarketValue>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>Fluid, Processed, NutritionalDrug</foodType>
+      <nutrition>0.04</nutrition>
+      <joy>0.23</joy>
+      <joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Alcohol</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>Tequila</defName>
+    <label>tequila</label>
+    <description>A strong liquor made from agave. The taste can be sweet or earthy depending on harvest location, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Tequila</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>30</MarketValue>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>Fluid, Processed, NutritionalDrug</foodType>
+      <nutrition>0.04</nutrition>
+      <joy>0.30</joy>
+      <joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Alcohol</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <ThingDef ParentName="MealBase">
+    <defName>Sake</defName>
+    <label>sake</label>
+    <description>A sweet liquor made from rice. It often has a fruity or herbal touch of flavour, but its main effect is intoxication. Excessive consumption can lead to alcohol addiction.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/Sake</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-150</equippedAngleOffset>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0</DeteriorationRate>
+      <MarketValue>27</MarketValue>
+      <MeleeWeapon_DamageAmount>7</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>1.8</MeleeWeapon_Cooldown>
+    </statBases>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>Fluid, Processed, NutritionalDrug</foodType>
+      <nutrition>0.05</nutrition>
+      <joy>0.28</joy>
+      <joyKind>Chemical</joyKind>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <soundEat>Ingest_Beer</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+      <hediffGivers>
+        <li>
+          <chance>1</chance>
+          <hediffDef>Alcohol</hediffDef>
+        </li>
+      </hediffGivers>
+    </ingestible>
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+</Defs>

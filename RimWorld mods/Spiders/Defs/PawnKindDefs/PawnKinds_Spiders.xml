@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <PawnKindDef ParentName="AnimalBase">
+    <defName>Spider</defName>
+    <label>Spider</label>
+    <race>Spider</race>
+    <combatPower>35</combatPower>
+    <wildSpawn_EcoSystemWeight>0.50</wildSpawn_EcoSystemWeight>
+	<wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+	<wildSpawn_GroupSizeRange>
+      <min>1</min>
+      <max>15</max>
+    </wildSpawn_GroupSizeRange>
+    <lifeStages>
+      <li>
+        <label>Spiderling</label>
+        <bodyGraphicData>
+          <texPath>Spiders/Spider2</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.4</drawSize>
+          <color>(150,150,250)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>0.5</drawSize>
+		  <color>(250,150,150)</color>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+	  <label>Spiderling</label>
+        <bodyGraphicData>
+          <texPath>Spiders/Spider2</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.8</drawSize>
+		  <color>(150,150,250)</color>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Spiders/Spider2</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+          <color>(250,150,150)</color>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+	  <label>Spider</label>
+        <bodyGraphicData>
+          <texPath>Spiders/Spider2</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.2</drawSize>
+          <color>(150,150,250)</color>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Spiders/Spider2</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.4</drawSize>
+		  <color>(250,150,150)</color>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/CritterDessicatedSmall</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

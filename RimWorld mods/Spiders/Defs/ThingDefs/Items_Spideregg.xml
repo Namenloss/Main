@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+      <ThingDef Abstract="True" Name="SpiderEggBase" ParentName="EggFertBase" >
+    <ingestible>
+      <nutrition>0.025</nutrition>
+    </ingestible>
+  </ThingDef>
+  
+       <ThingDef Abstract="True" Name="SpiderUnfertEggBase" ParentName="EggUnfertBase" >
+    <ingestible>
+      <nutrition>0</nutrition>
+    </ingestible>
+  </ThingDef>
+  
+  <ThingDef ParentName="SpiderUnfertEggBase">
+    <defName>EggSpiderUnfertilized</defName>
+    <label>Spider egg (unfert.)</label>
+    <description>[Obsolete]</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(130,130,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="SpiderEggBase">
+    <defName>EggSpiderFertilized</defName>
+    <label>Spider egg (fert.)</label>
+    <description>Fertilized Spider egg. If all goes well, it should hatch into a Spider. It can be eaten raw, but it's much better cooked.</description>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(145,145,145)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>20.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <compClass>CompHatcher</compClass>
+        <hatcherDaysToHatch>5</hatcherDaysToHatch>
+        <hatcherPawn>Spider</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

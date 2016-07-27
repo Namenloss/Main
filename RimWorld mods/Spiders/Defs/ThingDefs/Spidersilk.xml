@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--=============== Pure stuffs: Basics ====================-->
+  
+  <!--=============== Pure stuffs: Fabric, leather, etc  ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Spidersilk</defName>
+    <label>Spidersilk</label>
+    <description>Spider organic fabric for making clothes. It is soft, light, strong, and insulates well.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Synthread</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>30</MarketValue>
+      <Flammability>1.2</Flammability>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <color>(230,230,230)</color>
+      <statOffsets>
+        <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+        <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+        <ArmorRating_Heat>0.05</ArmorRating_Heat>
+        <ArmorRating_Electric>0.05</ArmorRating_Electric>
+      </statOffsets>
+      <statFactors>
+	    <WorkToMake>1.05</WorkToMake>
+        <ArmorRating_Blunt>1.7</ArmorRating_Blunt>
+        <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+        <ArmorRating_Heat>2.0</ArmorRating_Heat>
+        <ArmorRating_Electric>4.0</ArmorRating_Electric>
+        <Insulation_Cold>1.5</Insulation_Cold>
+        <Insulation_Heat>1.5</Insulation_Heat>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

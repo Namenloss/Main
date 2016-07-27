@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+ 
+  
+
+  <ThingDef ParentName="MealBase">
+    <defName>MealPickled</defName>
+    <label>Pickled meal</label>
+    <description>A homemade pickled meal, made from summer till fall for use in winter season, when the crop is reaped.</description>
+    <graphicData>
+      <texPath>Pickled/PickledJar</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.015</DeteriorationRate>
+      <MarketValue>75</MarketValue>
+	  <WorkToMake>1200</WorkToMake>
+    </statBases>
+    <ingestible>
+	  <foodType>Meat</foodType>
+      <preferability>Awful</preferability>
+      <nutrition>0.90</nutrition>
+      <joy>0.03</joy>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>Meal_Eat</soundEat>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+  </ThingDef>
+
+  
+  
+ <ThingDef ParentName="ResourceBase">
+    <defName>Brine</defName>
+    <label>Brine</label>
+    <description>A homebrew brine, used for homemade pickled meals. It has very limited medical use.</description>
+	<thingClass>Medicine</thingClass>
+    <graphicData>
+      <texPath>Pickled/Brine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Flammability>1.0</Flammability>
+      <MedicalPotency>0.15</MedicalPotency>
+      <DeteriorationRate>0.015</DeteriorationRate>
+	  <WorkToMake>1200</WorkToMake>
+    </statBases>
+	<ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>Fluid, Processed</foodType>
+      <nutrition>0.01</nutrition>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>Meal_Eat</soundEat>
+    </ingestible>
+    <thingCategories>
+      <li>Medicine</li>
+    </thingCategories>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  
+ <ThingDef ParentName="ResourceBase">
+    <defName>RawSalt</defName>
+    <label>Pile of salt</label>
+    <description>A pile of salt.</description>
+    <graphicData>
+      <texPath>Items/Resources/SaltPile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+	  <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stackLimit>400</stackLimit>
+  </ThingDef>
+   
+  <ThingDef ParentName="ResourceBase">
+    <defName>RawSugar</defName>
+    <label>Pile of Sugar</label>
+    <description>A pile of sugar.</description>
+    <graphicData>
+      <texPath>Items/Resources/SugarPile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>VegetableOrFruit, NutritionalDrug</foodType>
+      <nutrition>0.01</nutrition>
+      <joy>0.01</joy>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <soundEat>Meal_Eat</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+    </ingestible>
+	<stackLimit>400</stackLimit>
+  </ThingDef>
+  
+    <ThingDef ParentName="ResourceBase">
+    <defName>Caramel</defName>
+    <label>Caramel Bar</label>
+    <description>Caramel Bar. Sweet substance, in a bar.</description>
+    <graphicData>
+      <texPath>Pickled/Caramel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+	  <foodType>Processed, NutritionalDrug</foodType>
+      <nutrition>0.1</nutrition>
+      <joy>0.1</joy>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      <soundEat>Meal_Eat</soundEat>
+      <isPleasureDrug>true</isPleasureDrug>
+    </ingestible>
+  </ThingDef>
+  
+  
+  
+</ThingDefs>

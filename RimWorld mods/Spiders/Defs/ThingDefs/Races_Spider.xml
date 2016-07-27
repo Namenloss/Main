@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ============================================================ -->
+
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>Spider</defName>
+    <label>Spider</label>
+    <description>The most traditional giant spider. Spiders is raised for its silk.</description>
+    <statBases>
+      <MoveSpeed>4</MoveSpeed>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <MarketValue>90</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+    </statBases>
+	<tickerType>Normal</tickerType>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+        <meleeDamageDef>Bite</meleeDamageDef>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>EggSpiderFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>5</eggLayIntervalDays>
+        <eggCountRange>
+          <min>1</min>
+          <max>30</max>
+        </eggCountRange>
+      </li>
+	  <li Class="CompProperties_Spawner">
+        <thingToSpawn>Spidersilk</thingToSpawn>
+        <spawnInterval>50000</spawnInterval>
+        <spawnCount>1</spawnCount>
+	    <spawnMaxAdjacent>1</spawnMaxAdjacent>
+      </li>
+    </comps>
+    <race>
+      <body>BeetleLike</body>
+	  <predator>true</predator>
+      <petness>0.5</petness>
+      <baseHungerRate>0.2</baseHungerRate>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>0.85</baseHealthScale>
+      <foodType>OmnivoreRoughAnimal, OvivoreAnimal, CarnivoreAnimalStrict</foodType>
+      <trainableIntelligence>Advanced</trainableIntelligence>
+      <wildness>0.55</wildness>
+      <nuzzleChancePerHour>0.002</nuzzleChancePerHour>
+      <nuzzlePower>0.5</nuzzlePower>
+      <manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+	  <nameOnTameChance>1</nameOnTameChance>
+      <gestationPeriodDays>14</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(3, 1)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.05</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+	<tradeTags>
+      <li>StandardAnimal</li>
+      <li>BadassAnimal</li>
+    </tradeTags>
+  </ThingDef>
+  
+</Defs>

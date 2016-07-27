@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+ <RecipeDef Name="CookMealSimple">
+    <defName>CookMealPickled</defName>
+		<label>Cook Pickled Meal</label>
+		<description>Cooks a Pickled meal from any ingredient.</description>
+		<jobString>Pickling.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<ingredients>
+		<li>
+			<filter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<thingDefs>
+				<li>MealSimple</li>
+				<li>MealFine</li>
+				<li>MealLavish</li>
+			</thingDefs>
+			</filter>
+			<count>0.5</count>
+		</li>
+		<li>
+			<filter>
+			<thingDefs>
+				<li>Brine</li>
+			</thingDefs>
+			</filter>
+			<count>0.01</count>
+		</li>
+		</ingredients>
+		<products>
+		<MealPickled>1</MealPickled>
+		</products>
+		<fixedIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>Brine</li>
+			<li>MealSimple</li>
+			<li>MealFine</li>
+			<li>MealLavish</li>
+		</thingDefs>	 
+		<disallowedSpecialFilters>
+			<li>AllowPlantFood</li>
+		</disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+		<categories>
+			<li>FoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>Brine</li>
+		</thingDefs>
+		<exceptedCategories>
+			<li>EggsFertilized</li>
+		</exceptedCategories>
+		<exceptedThingDefs>
+			<li>MealSurvivalPack</li>
+			<li>MealPickled</li>
+			<li>Human_Meat</li>
+		</exceptedThingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<skillRequirements>
+				<li>
+					<skill>Cooking</skill>
+					<minLevel>4</minLevel>
+				</li>
+		</skillRequirements>
+		<recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+		</recipeUsers>
+ </RecipeDef>
+ 
+ 
+ <RecipeDef>
+    <defName>Cookcaramel</defName>
+    <label>Cook Caramel</label>
+    <description>Cook Caramel from Sugar and Milk.</description>
+    <jobString>Cooking Caramel.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1000</workAmount>
+    <targetCountAdjustment>1</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+		  <thingDefs>
+			<li>RawSugar</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+	  <li>
+		<filter>
+          <thingDefs>
+			<li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <Caramel>5</Caramel>
+    </products>
+			<fixedIngredientFilter>
+	      <thingDefs>
+			<li>RawSugar</li>
+			<li>Milk</li>
+          </thingDefs>
+      <disallowedSpecialFilters>
+        <li>AllowPlantFood</li>
+      </disallowedSpecialFilters>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+	      <thingDefs>
+			<li>RawSugar</li>
+			<li>Milk</li>
+          </thingDefs>
+      <exceptedCategories>
+        <li>EggsFertilized</li>
+      </exceptedCategories>
+      <exceptedThingDefs>
+				<li>Human_Meat</li>
+			</exceptedThingDefs>
+		</defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Cooking</skill>
+				<minLevel>4</minLevel>
+			</li>
+    </skillRequirements>
+	<recipeUsers>
+				<li>ElectricStove</li>
+				<li>FueledStove</li>
+		</recipeUsers>
+  </RecipeDef>
+ 
+
+</RecipeDefs>
